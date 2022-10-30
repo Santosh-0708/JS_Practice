@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = { 
+            fName:"Ravi",
+            lName:"Kumar",
+            Age: 25,
+            Country : "India",
+            Living : { City: "Bangalore",
+                       State: "Karnataka"
+             },
+            Salary: function(){
+                return 25000;
+            },
+            fullName : function(){
+                return this.fName + " " +this.lName;
+            }
+        }
+
+        document.write(a.fName + "<br>");
+        document.write(a.lName + "<br>");
+        document.write(a.Age + "<br>");
+        document.write(a.Country + "<br>");
+        document.write(a.Salary() + "<br>");
+        document.write(a.fullName() + "<br>");
+        document.write(a.Living.City + "<br>");
+        
+    //object method-2
+    var person = new Object();
+    person.firstName = 'Kishor';
+    person.lastName = 'Kumar';
+    person.age = 25;
+
+    document.write(person.firstName+ "<br>");
+    document.write(person.lastName+ "<br>");
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

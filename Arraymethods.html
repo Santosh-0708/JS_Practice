@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Array Methods:
+       /* var arr=["Akhil","Gautami","Ravi", "Santosh","Rakshit"]
+        arr.sort();
+        document.write(arr, "<br>");
+        arr.reverse();
+        document.write(arr, "<br>");
+        arr.pop();
+        document.write(arr, "<br>");
+        arr.push("Aman");
+        document.write(arr, "<br>");
+        arr.shift();
+        document.write(arr, "<br>");
+        arr.unshift("Ganesh")
+        document.write(arr, "<br>","<br>");
+
+        //Arry concat()
+        var arr1 = ["Akhil","Gautami","Ravi", "Santosh","Rakshit"]
+       document.write(arr1, "<br>");
+        var arr2 = arr1.concat("Sanket","Chetan");
+        document.write(arr2,"<br>");
+        var a = arr2.join("-");
+        document.write(a,"<br>","<br>");
+        
+        //SLice and Splice()
+        var c = ["Akhil","Gautami","Ravi", "Santosh","Rakshit"]
+        var d = c.slice(1,4);
+        document.write(d,"<br>");
+        var d = c.slice(2);
+        document.write(d,"<br>");
+        var d = c.slice(-2);
+        document.write(d,"<br>");
+        var d = c.slice(-3,-1);
+        document.write(d,"<br><br>");
+
+        var aa = ["Akhil","Gautami","Ravi", "Santosh","Rakshit"]
+        aa.splice(2,0,"Satish","Girish");
+        document.write(aa , "<br>")
+        var ab = ["Amar","Birbal","Vinay", "Sanjay","Devgan"]
+        ab.splice(2,2,"Amitabh","Rithik");
+        document.write(ab, "<br>")
+        var ac = ["Amar","Birbal","Vinay", "Sanjay","Devgan"]
+        ac.splice(2,3);
+        document.write(ac, "<br><br>")
+
+        //isArray
+        var a1 = ["Akhil","Gautami","Ravi", "Santosh","Rakshit"]
+        var a2 = Array.isArray(a1);
+        document.write(a2, "<br><br>")
+        if(Array.isArray(a1)) {
+            document.write("This is Array", "<br><br>");
+        }else{
+            document.write("This is not an Array", "<br><br>");
+        }
+
+        //indexOf and lastIndexOf
+        var b1 = ["Book", "Pen", "Pencil","Pen" , "Paper"];
+        var b2 = b1.indexOf("Pen", 2)
+        document.write(b2, "<br><br>")
+        var b2 = b1.indexOf("Duster")
+        document.write(b2, "<br><br>")
+        var b3 = b1.lastIndexOf("Pencil")
+        document.write(b3, "<br><br>")*/
+
+
+        //Includes
+        var b4 = ["Book", "Pen", "Pencil","Pen" , "Paper"];
+        var b5 = b4.includes("Pen")
+        document.write(b5, "<br><br>")
+
+        //some & every
+        var age = [10,20,18,5]
+        document.write(age + "<br><br>");
+
+        var b=age.some(checkAdultage);
+        document.write(b, "<br><br>");
+
+        function checkAdultage(age) {
+            return age>=18;
+
+        }
+
+
+        var age1 = [30,20,18,55]
+        document.write(age1 + "<br><br>");
+
+        var b1=age1.every(checkAdultage);
+        document.write(b1, "<br><br>");
+
+        function checkAdultage(age1) {
+            return age1>=18;
+        }
+
+        //find 
+        var age2 = [15,20,25,5]
+        document.write(age2 + "<br><br>");
+
+        var b2=age2.find(checkAdultage);
+        document.write(b2, "<br><br>");
+
+        function checkAdultage(age2) {
+            return age2>=18;
+        }
+    //findIndex
+        var age3 = [15,20,25,5]
+        document.write(age3 + "<br><br>");
+
+        var b3=age3.findIndex(checkAdultage);
+        document.write(b3, "<br><br>");
+
+        function checkAdultage(age3) {
+            return age3>=18;
+        }
+
+    //filter
+    var ab = [8,20,35,5]
+        document.write(ab + "<br><br>");
+
+        var ab1=ab.findIndex(checkAdultage);
+        document.write(ab1, "<br><br>");
+
+        function checkAdultage(ab) {
+            return ab>=18;
+        }
+
+    //toString, valueOf, fill
+    var bb = ["Book", "Pen", "Pencil","Pen" , "Paper"];
+    bb.toString();
+    document.write(bb, "<br><br>");
+    bb.valueOf();
+    document.write(bb, "<br><br>");
+    var fil = ["Book", "Pen", "Pencil","Pen" , "Paper"];
+    fil.fill("Material");
+    document.write(fil, "<br><br>");
+
+    //forEach
+    var mat = ["Book", "Pen", "Pencil","Pen" , "Paper"];
+    mat.forEach(function(value, index) {
+        document.write(index + " : "  + value + "<br>");
+
+    });
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
